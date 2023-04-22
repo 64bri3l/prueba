@@ -1,0 +1,574 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: rgb(241, 247, 248);
+}
+
+.icon img{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1{font-size: 3.5em}
+h2{font-size: 2.7em}
+h3{font-size: 2em}
+p{font-size: 1.25em}
+ul{list-style: none;}
+
+/*Navigation*/
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(195deg, #062af3 30%, #f4f5f7 100%);
+}
+
+.navbar-brand{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.navbar-menu {
+    background: rgba(156, 175, 237, 0.95);
+    width: 50%;
+    height: 200px;
+    margin-top: 17px;
+    margin-right: -100px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #030303;
+}
+
+.nav-item {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: auto;
+    text-align: start;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    transition: all .5s;
+    font-weight: 600;
+
+}
+
+.nav-item a:hover{
+    transition: .3s;
+    color: rgb(3, 65, 248);
+}
+
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 30px black;
+    color: rgb(254, 252, 252);
+    background-color: #1a3bf5;
+}
+
+.color-acento{
+    color: blue;
+}
+
+/*Nav options (Roxy)*/
+.sobrenos {
+    padding: 60px;
+}
+
+.sobre h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #062af3;
+    text-align: center;
+}
+.sobre img{
+    margin-top: 50px;
+    height: 250px;
+}
+.caja{
+    margin-top: -250px;
+    margin-left: 300px;
+    text-align: justify;
+}
+
+/*Buttons*/
+.nosotros{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 30px black;
+    color: #f4f5f7;
+    background-color: #4660f6;
+}
+
+.nosotros a {
+    text-decoration: none;
+    color: #060606;
+}
+
+.nosotros:hover{
+    background-color: #f5f6fa;
+    color: black;
+}
+
+button a{
+    text-decoration: none; /* esto lo puse para sacar el subrayado de los link o botones Mauro G */
+}
+
+button:hover {
+    background-color: #f5f6fa;
+    color: black;
+}
+
+.menu {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+
+/* este li modifica la parte en donde estan los niños de espalda*/
+li {list-style: none;
+    width: 100px;
+    height: 30px;
+    top: 7px;
+    color: rgb(2, 2, 2) !important;  
+}
+
+header{
+    background: linear-gradient(90deg, #062af3 30%, #f4f5f7 100%);
+    opacity: 85%;
+}
+
+header .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(23, 23, 240);
+}
+
+#hero{
+    display: flex;
+    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    color: white;
+    background-image: url("img/header.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#hero h1{
+    text-shadow: 5px 8px 10px black;
+}
+
+/*Ediciones Form Gabi*/
+
+form {
+    width: 480px;
+    background: rgb(2, 2, 84);
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: -1%;
+    border-radius: 10px;
+    color: white;
+    float: left;
+    padding: 10px;
+}
+
+/* Estamos pensando en ponerlo posterior a la inscripción cuando hagamos backend. (Roxy)
+.form2 { 
+    width: 480px;
+    background: rgba( 0,0,0,0.5);
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: -1%;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+*/
+
+/* Form Ediciones de Roxy*/
+
+.form {
+    background: linear-gradient(60deg, #2846f0 40%, #f4f5f7 100%);
+    padding: 3%;
+    height: 100vh;
+}
+
+.form h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+.form h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+}
+
+.form h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+}
+
+.form-control {
+    border: solid black;
+    border-color: black;
+    font-size: 1em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#somos-club .conteiner{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* este es el aside que hizo el Gabi modificado para adaptarlo a citio de celuar (Mauro T)*/
+
+aside {
+    background-color: rgba(240, 239, 239, 0.822);
+    padding: 80px 20px;
+    box-shadow: 3px 3px 20px rgb(0, 40, 128)
+}
+
+.vectores {
+    width: 80px;
+}
+
+.calendario{
+    text-align: center;
+    margin: 20px;
+}
+
+.calendario iframe{
+    width: 115%;
+    height: 70vh;
+    position: relative;
+    right: 30px;
+}
+
+aside div {   
+    font-size: x-large;
+    margin-top: -20px;
+}
+
+aside p { 
+    text-align: center;
+    margin-left: 10px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+#nuestros-deportes{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-deportes .conteiner{
+    padding: 100px 12px;
+    padding-top: 40px;
+}
+
+#nuestros-deportes h2{
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+#nuestros-deportes p{
+    display: none;
+}
+
+#nuestros-deportes .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: url(img/carta1.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: url(img/futbol\ femenino.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: url(img/carta3.jpg);
+}
+
+#nuestros-deportes h3{
+    text-shadow: 8px 5px 8px black;
+}
+
+/*desde aca configure el carrusel (Mauro T)*/
+#caracteristicas{
+    padding: 100px 12px;
+    padding-top: -100px;
+}
+
+#caracteristicas h2{
+    margin-bottom: 20px;
+    text-shadow: 4px 3px 8px rgb(26, 40, 243);
+    font-weight: bold;
+}
+
+#caracteristicas .conteiner{
+    text-align: center;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+.redes li{
+    float: right;
+    text-decoration: none;
+    align-content: center;
+}
+
+.conteiner p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .conteiner{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 720px) {
+/*Es para que no se muestre el logo del equipo en mobile y no se rompa el sitio (Roxy)*/
+    .icon img{
+        display: none;
+    }
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .navbar-menu {
+       height: 100px;
+       width: 100%;
+       top: 0;
+       background: none;
+       transition: none;
+       text-align: center;
+       margin-right: 50px;
+    }
+
+    .navbar-menu li {
+        display: inline-block;
+        line-height: 50px;
+        margin-top: 17px;
+        margin-left: 20px; /*le da espacio en medio a los li para separarlos entre si (Roxy)*/
+        transition: none;
+    }
+
+    .navbar-menu li a {
+        font-size: 20px;
+        color: #060606;
+    }
+
+    .navbar-menu li a:hover{
+        color: white;
+        transition: .3s;
+    }
+
+    /*Form (Roxy)*/
+
+    .form{
+        background-image: url(img/fondo.webp);
+        background-size: cover;
+    }
+
+    #somos-club .conteiner{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-club .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-club .img-conteiner{
+        background-image: url(img/portada.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 400px;
+    }
+
+    /*responsivo aside (Mauro T)*/
+    .vectores {
+        width: 60px;
+        object-fit: cover;
+    }
+
+    aside {
+        width: 30%;
+        height: 155vh;
+        float: right;
+    }
+
+    .calendario iframe{
+        width: 125%;
+        height: 40vh;
+        position: relative;
+        right: 36px;
+        top: -15px;
+    }
+
+    #nuestros-deportes{
+        margin-top: 130px;
+    }
+
+    #nuestros-deportes .deportes{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-deportes p{
+        display: block;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    #nuestros-deportes h3{
+        margin-top: 0;
+    }
+
+    #nuestros-deportes .carta{
+        padding: 50px;
+    }
+
+    #caracteristicas{
+        text-align: initial;
+    }
+
+    /*carrusel responsive (Mauro T)*/
+    #caracteristicas .conteiner{
+        width: 90%;
+    }
+
+    #caracteristicas .conteiner img{
+        height: 70vh;
+    }
+
+    #final h2{
+        font-size: 3.5em;
+    }
+
+    #final button{
+        font-size: 1.8em;
+    }
+
+    footer .conteiner{
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 227, 179);
+    width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.container {
+    width: 1180px;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav.header {
+    width: 1140px;
+    height: 60px;
+    margin-top: 10px;
+    background-color: rgb(223, 88, 55);
+}
+div.logo img {
+    float: left;
+    height: 60px;
+    padding: 10px;
+}
+div.menu {
+    float: left;
+    width: auto;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding: 10px;
+}
+ul li,
+ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    float: left;
+    margin-left: 20px;
+}
+
+ul li:hover {
+    background-color: rgb(143, 31, 3);
+    padding: 10px;
+}
+
+
+
+
+
+div.login {
+    float: right;
+    margin-top: 10px;
+    width: auto;
+    height: 60px;
+    padding: 10px;
+}
+
+section {
+    width: 1180px;
+    top: 10px;
+}
+
+main {
+    width: 800px;
+    margin-left: 30px;
+}
+
+article {
+    width: 380px;
+    height: 380px;
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 10px;
+    float: left;
+    background-color: white;
+    text-align: justify;
+}
+
+article img {
+    width: 250px;
+}
+
+aside {
+    width: 340px;
+    /* position: absolute;*/
+    float: left;
+    margin-top: -770px;
+    margin-left: 800px;
+}
+
+nav.nav-rigth {
+    top: 10px;
+    overflow: hidden;
+}
+
+nav.nav-rigth img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+div.cursos {
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: white;
+}
+
+img.cursos {
+    float: left;
+    width: 100px;
+}
+
+h2 {
+    background-color: white;
+    margin-top: 10px;
+}
+
+h3 {
+    background-color: white;
+    width: 207px;
+    height: 85px;
+    float: right;
+    padding-top: 20px;
+}
+
+p {
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: red;
+    border: 1px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(51, 200, 245);
+    border: 1px solid rgb(51, 200, 245);
+}
+
+footer {
+    position: absolute;
+    width: 1140px;
+    height: 80px;
+    background-color: rgb(223, 88, 55);
+    top: 860px;
+}
+
+footer a {
+    color: white;
+}
+
+footer h4 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+footer h5 {
+    color:white;
+    font-size: 18px;
+}

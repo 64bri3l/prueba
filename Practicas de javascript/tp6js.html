@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE 7 de JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="js6.js"></script>
+
+</head>
+<body>
+    <style>
+        /*Esta es la clase de los cuadros que necesitamos crear*/
+        .cuadro{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            margin: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            transition: 0.6s;
+        }
+        /*Esto da la opacidad 0 en el calendario*/
+        .op-0 {
+            opacity: 0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="col">
+          <div class="row text-center">
+            <h4>Crea cuadros</h2>
+            <section style="margin-top: 50px;">
+               
+                <select name="" id="cuadros" >
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="20">20</option>
+                </select>
+                <br>
+
+                <br>
+                <p id="texto" class="ventana"></p>
+                <br>
+            </section>
+            <!--Aquí debajo se van a crear las cajitas-->
+            <section id="container-cuadros" class="d-flex flex-wrap justify-content-center"></section>
+          
+          </div>
+          <div class="row text-center">
+            <h4>Calendario</h4>
+            <section class="mt-4">
+                <select name="" id="mes">
+                    <!--Vamos a pasar como valores solo la cantidad 
+                    de días que necesitamos crear. Por eso los valores se repiten-->
+                    <option value="31">Enero</option>
+                    <option value="28">Febrero</option>
+                    <option value="31">Marzo</option>
+                    <option value="30">Abril</option>
+                    <option value="31">Mayo</option>
+                    <option value="30">Junio</option>
+                    <option value="31">Julio</option>
+                    <option value="31">Agosto</option>
+                    <option value="30">Septiembre</option>
+                    <option value="31">Octubre</option>
+                    <option value="30">Noviembre</option>
+                    <option value="31">Diciembre</option>
+                </select>
+            </section>
+            <!--Aquí debajo se va a crear el calendario-->
+            <section id="dias" class="d-flex flex-wrap justify-content-center" style="max-width: 880px; margin: 0 auto;"></section>
+          </div>
+
+        </div>
+      </div>
+      
+
+
+
+
+</body>
+</html>

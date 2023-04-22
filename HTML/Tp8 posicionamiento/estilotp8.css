@@ -1,0 +1,143 @@
+body {background-color: Rgb(255,227,179);
+    width:800px;
+    height: 1700px;
+    border: solid 1px black
+}
+
+.zero{ width: 780px;
+    height: 500px;
+    position: absolute;
+    left: 20px;}
+
+.uno {width: 780px;
+    height: 30px;
+    background-color: black;
+    opacity: 70%;
+    position: fixed;
+    left: 20px;
+    overflow: hidden;
+    z-index: 10;
+    }
+
+.rsoc{position: absolute;
+        top: 15px;
+        right:130px;}
+
+.dos{float: right;}
+
+.icons{width: 500px;
+    height: 30px;
+    margin-right:-120px;
+}
+
+.menu-princ{width: 640px;
+    height: 50px;
+    background-color: rgb(29,29,27);
+    position: relative;
+    top:475px;
+    left: 80px;
+}
+
+li{ list-style-type: none;
+    float: left;
+    color: white;
+    margin-top:15px;
+    margin-left: 40px;
+    margin-right: 90px;
+    font-size: small;
+}
+.menu-princ li:hover{ background-color: rgb(233,88,55);} 
+
+.opciones {
+    width: 800px;
+    height: 200px;
+    position: absolute;
+    top: 535px;
+    left: 60px;
+    color: white;
+}
+.opc{position: relative;
+bottom:50px;
+left:40px}
+.cinco {
+    width: 100px;
+    height: 100px;
+    background-color: #f78b14;
+    position: absolute;
+    top:20px;
+}
+.seis{
+    width: 100px;
+    height: 100px;
+background-color: #85b923;
+position: absolute;
+left:200px;
+top:20px
+}
+.siete{
+    width: 100px;
+    height: 100px;
+background-color: #f78b14;
+position: absolute;
+left: 400px;
+top:20px
+}
+.ocho {
+    width: 100px;
+    height: 100px;
+    background-color: #85b923;
+    position: absolute;
+    left:600px;
+    top:20px
+}
+h6 {position: relative;
+top:30px;
+text-align: center;}
+
+.cuerpo { 
+    background-color: white;
+    height: 900px;
+    width: 780px;
+    position: absolute;
+    top: 710px;
+    left: 20px;
+    text-align: center;
+}
+.diez {height: 300px;}
+    div .diez img {float: left; 
+    width: 370px;
+    height: 260px;
+    position: relative;
+    left:40px;
+    top:-20px;}
+    div .diez p {margin-top: 40px;}
+
+.once { height: 300px;}
+    div .once img {float: right; 
+        width: 370px;
+        height: 260px;
+        position: relative;
+        right:40px;
+        top: -30px}
+    div .once p {margin-top: 10px;}
+
+.diez-uno { height: 300px;}
+div .diez-uno img {float: left; 
+    width: 370px;
+    height: 260px;
+    position: relative;
+    left:40px;
+    top: -20px
+}
+div .diez-uno p { margin-top:-10px;}
+
+
+button {background-color:#f78b14;
+    color: white;
+    border-radius: 5px;
+    border-color: #f78b14;
+}
+
+footer {float: none; position:relative; width: 780px; height: 60px; background-color: rgb(223, 88, 55);top: 1560px; left: 10px ;}
+
+

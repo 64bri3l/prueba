@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RegistroEstilo tp5.css">
+</head>
+<body>
+    
+    <form action="registro" method="get"> <div>Registro</div>
+         <BR></BR>
+        <label for="nombreyapellido">Nombre y apellido: </label> <input  type="text" name="usuario">
+         <BR></BR>
+        <label for="DNI">DNI: </label> <input type="number" name="number" placeholder="30000000">
+         <BR></BR>
+        <label for="email"> Correo eléctronico: </label>  <input type="text" placeholder="usuario@bombadenafta.com">
+        <p> <div style="font-size: x-large; font-family: Arial, Helvetica, sans-serif; font-style:italic; font-weight: normal;"> ¿En que zona vives? 
+            <select name="Zona">
+                <option value="" disabled selected> Elegí una zona</option>
+                <option value="GRM">Gran Mendoza</option>
+                <option value="VDU">Valle de Uco</option>
+                <option value="ZNE">Zona Este</option>
+                <option value="ZNS">Zona Sur</option>
+            </select>
+        </p> </div>
+        <label for="Motor de tu auto:">Motor de tu auto:</label>
+            <input type="radio" name="motor-de-tu-auto"> Naftero 
+            <input type="radio" name="motor-de-tu-auto"> Gasolero 
+            <input type="radio" name="motor-de-tu-auto"> Sojero 
+         <BR></BR> 
+        <button>ENVIAR</button> &nbsp; &nbsp;
+        <button type="reset">RESETEAR</button>
+    </form>
+</body>
+</html>

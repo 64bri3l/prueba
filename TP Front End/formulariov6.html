@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="StyleSheet" href="stylesform9.css"> 
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7205df1f39.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="icon">
+          <img src="img/icon.ico" alt="">
+        </div>
+        <h1 class="navbar-brand">Club Deportivo Ferroviario</h1>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="indexv9.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenosotrosv9.html" target="_blank">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexv9.html">Deportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    </header>
+
+    <h1 class="h1-form">FORMULARIO DE INSCRIPCIÓN</h1> <br>
+    <form class="form">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputEmail4">
+        </div> <br>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputPassword4">
+        </div> <br>
+        <div class="col-12">
+          <label for="Address" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Ej: Mitre 1234">
+        </div> <br>
+        <div class="col-12">
+          <label for="phonenumber" class="form-label">Numero de Telefono</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Ej: 261223344">
+        </div> <br>
+        <div class="col-md-6">
+          <label for="phonenumber2" class="form-label">Num de Emergencia</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div> <br>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Movilidad</label>
+          <select id="inputState" class="form-select">
+            <option selected>Auto</option>
+            <option>Colectivo</option>
+            <option>Bicicleta</option>
+            <option>Caminando</option>
+            <option>Otro</option>
+          </select>
+        </div> <br>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">E-mail</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="Ej: ejemplo@gmail.com">
+        </div> <br>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Soy Menor de 18
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Soy Mayor de 18
+            </label>
+        </div> <br>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Estoy Listo!</button>
+        </div>
+      </form>
+      <div>
+        <img id="img-side" src="img/fondo.jpeg" alt="">
+      </div>
+
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img src="img/Logo banda de musica Techno psicodelico verde y negro .png" alt="Logo banda de musica Techno psicodelico verde y negro .png">
+              </a>
+            </figure>
+                            
+           </div>
+          <div class="box">
+             <h2>SOBRE NOSOTROS</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, impedit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, impedit!</p>
+    
+           </div>
+          <div class="box">
+             <h2 id="contacto">SEGUINOS</h2>
+             <div class="red-social">
+               <a href="https://es-la.facebook.com/CDF1932" target="_blank" class="fa fa-facebook"></a>
+               <a href="https://www.instagram.com/clubdeportivoferroviariook/" target="_blank" class="fa fa-instagram"></a>
+               <a href="https://walink.co/fee5dd" class="fa fa-whatsapp"></a>
+                                
+             </div>
+           </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2022 <b>Roxineta</b> - Todos los Derechos Reservados.</small>
+        </div>
+      </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

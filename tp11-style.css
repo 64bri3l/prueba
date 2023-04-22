@@ -1,0 +1,56 @@
+body{background-color: Rgb(255,227,179);
+    width: 100%;
+    height: 1800px;}
+
+.zero{ width: 80%;
+    height: 500px;
+    position: absolute;}
+
+.uno{width: 80%;
+    height: 30px;
+    background-color: black;
+    opacity: 70%;
+    left: 10%;
+    overflow: hidden;
+    z-index: 10;}
+
+li{list-style: none;}
+
+.icons{width: 500px;
+    height: 30px;
+    position: absolute;
+    top: 7px;
+    right: -200px;
+    color: white !important;} 
+
+.opciones {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    top: 535px;
+    left: 150px;
+    color: white;}
+
+    .cinco {
+        width: 200px;
+        height: 200px;
+        background-color: #f78b14;
+        position: absolute;
+        top:20px;
+    }
+    .seis{
+        width: 200px;
+        height: 200px;
+    background-color: #85b923;
+    position: absolute;
+    left:300px;
+    top:20px;
+    }
+    .siete{
+        width: 200px;
+        height: 200px;
+    background-color: #f78b14;
+    position: absolute;
+    left: 600px;
+    top:20px
+    }

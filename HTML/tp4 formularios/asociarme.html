@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CLINICA PRIVADA DE MENDOZA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!--CSS PERSONAL-->
+    <link rel="stylesheet" href="planilla css tp4.css">
+
+</head>
+
+<body>
+
+    <!-- NO BORRAR / MENU DEL SITIO -->
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" width="35" class="d-inline-block align-text-top"> CLINICA
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="inicio.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ESPECIALIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PLANES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asociarme.html">ASOCIARME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--COLOCA TU FORMULARIO AQUI-->
+
+    <!--
+        EL formulario debe contener 
+        
+        *DNI,
+        *domicilio, 
+        *un select para provincias (minino 5),
+        *Telefono, 
+        *Email,
+        *Un select con 5 obras sociales,
+        *estado civil (soltero, casado, divorciado, viudo),
+        *cantidad de personas a cargo,
+        *cantidad de hijos
+        *checkbox con días de contacto,
+        *checkbox con turnos de contacto (mañana, tarde, noche),
+        *text area con enfermedades preexitentes,
+        *input type file para cargar la foto del nuevo socio
+
+
+     -->
+     <form action="asociarme" method="get">
+        <label for="Nombre y apellido">Nombre y apellido: <input type="text" name="usuario"></label>
+     <br></br>
+        <label for="DNI">DNI: <input type="tel" name="DNI" placeholder="30.000.000"> </label>
+    <br></br> 
+    <label for="Domicilio">Domicilio: <input type="text" name="Domicilio"></label>
+    <p> <div style="color:aqua; font: size 15px; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Provincia</b>:</div> 
+        <select name="Provincia">
+            <option value="" disabled selected> Elegí una provincia</option>
+            <option value="MDZ">Mendoza</option>
+            <option value="SJN">San Juan</option>
+            <option value="SLS">San Luis</option>
+            <option value="LRJ">La Rioja</option>
+            <option value="CTM">Catamarca</option>  
+        </select> </p>
+        <label class="distinto" for="Teléfono">Teléfono: <input type="tel"name="Teléfono"> </label>
+    <br></br> 
+        <label for="email">Email: <input type="text" name="Correo" placeholder="asociarme@asociarme.com"></label>
+    <br></br>
+    <p>Obra Social:
+        <select name="ObraSocial">
+            <option value="" disabled selected> Elegí una obra social </option>
+            <option value="OSPE"> OSPE</option>
+            <option value="OSPRERA"> OSPRERA </option>
+            <option value="OSUTHGRA"> OSUTHGRA</option>
+            <option value="OSPELSYM"> OSPELSYM</option>
+            <option value="OSDE"> OSDE</option>
+        </select></p>
+        <label for="Estado Civil">Estado Civil: 
+                <input type="radio" name="EstadoCivil"> Soltero
+                <input type="radio" name="EstadoCivil"> Casado
+                <input type="radio" name="EstadoCivil"> Divorciado
+                <input type="radio" name="EstadoCivil"> Viudo
+        </label>
+    <br></br> 
+        <label for="Cantidad de personas a cargo"> Cantidad de personas a cargo <input type="number" name="Personas a cargo"> </label>
+    <br></br> 
+        <label for="Cantidad de hijos">Cantidad de hijos <input type="number" name="Hijos"></label>
+    <br></br>
+        <label for="Dias de contacto">Dias de contacto: 
+                <input type="checkbox" name="Dias de contacto"> Lunes &nbsp;
+                <input type="checkbox" name="Dias de contacto"> Martes &nbsp;
+                <input type="checkbox" name="Dias de contacto"> Miércoles
+        </label>
+    <br></br>
+        <label for="Turnos de contacto">Turnos de contacto: 
+                <input type="checkbox" name="Turnos de contacto"> Mañana &nbsp;
+                <input type="checkbox" name="Turnos de contacto"> Tarde &nbsp;
+                <input type="checkbox" name="Turnos de contacto"> Noche
+        </label>  
+    <br></br>
+        Enfermedades preexistentes: <br>
+        <textarea name="Enfermedades preexistentes" id="" cols="30" rows="10"></textarea>
+    <br></br>
+        <input type="file">
+    <br></br>  
+        <button>ENVIAR</button>
+    </form>
+
+    <!-- NO BORRAR-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
